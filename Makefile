@@ -31,5 +31,4 @@ push-hub:
 	huggingface-cli upload gabriel-rocha/Drug-Classification ./model /model --repo-type=space --commit-message="Sync Model"
 	huggingface-cli upload gabriel-rocha/Drug-Classification ./results /metrics --repo-type=space --commit-message="Sync Model"
 
-deploy:
-	hf-login push-hub
+deploy: hf-login push-hub
